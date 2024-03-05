@@ -43,9 +43,13 @@ export default function Intro() {
             initial={{opacity: 0, y: 100}}
             animate={{opacity:1, y:0}}
             >
-            <span className='font-bold'>Lorem ipsum dolor sit</span>, amet consectetur adipisicing elit.{" "}
-            <span className='font-bold'>Ipsum labore</span> necessitatibus id veritatis doloribus sint voluptatem rerum omnis, 
-            aliquid ab doloremque recusandae nesciunt, consequatur reprehenderit odio dolore culpa inventore modi dignissimos eveniet nihil facilis et.
+
+            {/* Hey there! I am a passionate computer science graduate with a keen interest in <span className='font-bold'>Technology</span> applied across diverse fields such as <span className='italic'>Psychology, Finance, Quantum Computing and ML/AI</span>, with proven <span className='font-bold'>academic excellence and leadership skills</span> demonstrated through <span className='font-bold'>executive roles</span> in tech clubs. 
+            I am eager to leverage my technical skills and interdisciplinary knowledge to drive innovation and solve complex challenges at the intersection of computer science and various domains. */}
+
+            Hey there! Having spent a great deal of subjects in my undergraduate degree exploring different fields, I've built an interest in <span className='font-bold'>applying technology across diverse fields</span> such as <span className='italic'>Psychology, Finance, Quantum Computing</span> through <span className='font-bold'>Machine Learning/Artificial Intelligence, and Software Development Skills</span>.
+            I've also led tech clubs in the past, allowing me to hone my human-skills and attain great personal milestones.
+
         </motion.h1>
 
         <motion.div 

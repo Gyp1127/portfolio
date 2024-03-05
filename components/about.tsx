@@ -20,8 +20,10 @@ export default function About() {
         <SectionHeading>
         About Me
         </SectionHeading>
-        <p className="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur hic aspernatur eligendi quibusdam eius rem repellendus facere fuga eaque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis necessitatibus architecto sed libero ab maiores?</p>
+
+        <p className="mb-3">Having attended my first hackathon in University, I continued on to host a range of accessible educational and competitive events catering to students interested in learning about the world of tech and seasoned hackers looking for a challenge. I also lent my expertise to other clubs to help them run smoother and more impactful events. </p>
+        <p>My time as the President of HackMelbourne and Treasurer of Women In Technology at the University of Melbourne allowed me to shape the landscape of events on Campus, proving that no event is too small to make a difference in people's academic and social life</p>
+        
     </motion.section>
   )
 }
