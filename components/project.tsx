@@ -29,7 +29,7 @@ export default function Project({
                     opacity: opacityProgress}}
             className="group mb-3 sm:mb-8 last:mb-0">
             <section 
-            className="bg-stone-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] group-even:pl-8 hover:bg-stone-200 transition rounded-lg">
+            className="bg-stone-100 max-w-[42rem] borderBlack overflow-hidden sm:pr-8 relative sm:h-[20rem] group-even:pl-8 hover:bg-stone-200 transition rounded-lg">
                 <div className="py-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]">
                     <h3 className="text-2xl font-semibold">{title}</h3>
                     <p className="mt-2 leading-relaxed text-stone-700">{description}</p>

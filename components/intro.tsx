@@ -9,10 +9,12 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
 
   const { ref } = useSectionInView("Home", 0.5)
+  const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
 
   return (
     <section id="home" className='mb-27 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' ref={ref}>
@@ -56,7 +58,11 @@ export default function Intro() {
             transition={{delay:0.1}}>
             <Link 
                 href="#contact"
-                className='group bg-stone-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-stone-950 active:scale-105 transition cursor-pointer border border-black/10'>
+                className='group bg-stone-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-stone-950 active:scale-105 transition cursor-pointer borderBlack'
+                onClick={() => {
+                    setActiveSection("Contact")
+                    setTimeOfLastClick(Date.now)
+                }}>
                     Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
             </Link>
             <a
@@ -65,10 +71,10 @@ export default function Intro() {
                 download>
                     Download CV <HiDownload className="opacity-60 group-hover:translate-x-1 transition"/>
             </a>
-            <a className="bg-white p-4 text-stone-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-stone-950 active:scale-105 transition cursor-pointer border border-black/10" 
+            <a className="bg-white p-4 text-stone-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-stone-950 active:scale-105 transition cursor-pointer borderBlack" 
             href="https://www.linkedin.com/in/ganyupin/"
             target="_blank"><BsLinkedin /></a>
-            <a className="bg-white p-4 text-stone-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-stone-950 active:scale-105 transition cursor-pointer border border-black/10" 
+            <a className="bg-white p-4 text-stone-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-stone-950 active:scale-105 transition cursor-pointer borderBlack" 
             href="https://github.com/Gyp1127"
             target="_blank"><FaGithubSquare /></a>
 
