@@ -6,7 +6,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import llmImg from '@/public/llm.jpg';
 import crmImg from '@/public/crm.jpg';
 import portfolioImg from '@/public/portfolio.jpg';
-import profilePic from '@/public/yp image.jpg';
+
 
 export const links = [
   {
