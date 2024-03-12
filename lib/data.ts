@@ -1,10 +1,12 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FiActivity } from "react-icons/fi"
+import { FaFemale, FaWineGlass } from "react-icons/fa";
+import { IoGitNetwork } from "react-icons/io5";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import llmImg from '@/public/llm.jpg';
+import crmImg from '@/public/crm.jpg';
+import portfolioImg from '@/public/portfolio.jpg';
+
 
 export const links = [
   {
@@ -27,81 +29,105 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  // {
+  //   name: "Contact",
+  //   hash: "#contact",
+  // },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Hackathon Logistics Director",
+    location: "HackMelbourne",
+    description: "Coordinated the flagship Hackathon and the beginner-friendly hackathon at the University of Melbourne.",
+    icon: React.createElement(FiActivity),
+    date: "2021-2022",
+  },
+  {
+    title: "Treasurer",
+    location: "Women In Technology",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Assisted in event management and largely contributed via grants and budget/financial work.",
+    icon: React.createElement(FaFemale),
+    date: "2022 - 2023",
+  },
+  {
+    title: "President",
+    location: "HackMelbourne",
+    description:
+      "Monitored internal departments whilst managing ongoing collaboration with many other clubs and external organisations.",
+    icon: React.createElement(FaWineGlass),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Graduated University",
+    location: "University of Melbourne",
+    description:
+      "Graduated from the Bachelor of Science (Computing & Software Systems).",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021 - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Summer Research Intern",
+    location: "Complex Human Data Hub",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Conducted research into LLMs and their capabilities with temporal information compared to humans.",
+    icon: React.createElement(IoGitNetwork),
+    date: "2023-2024",
   },
 ] as const;
 
+// { ##### FORMAT #####
+//   title: "Full-Stack Developer",
+//   location: "Houston, TX",
+//   description:
+//     "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+//   icon: React.createElement(FaReact),
+//   date: "2021 - present",
+// }
+
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "LLM Research",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Concluded that ChatGPT 3.5 Turbo was extremely sensitive to prompts and results suggested that there is a tradeoff between task accuracy versus mimicking human memory.",
+    tags: ["Python", "LLMs", "Machine Learning", "Prompt Engineering"],
+    imageUrl: llmImg,
   },
   {
-    title: "rmtDev",
+    title: "CRM Software",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Experienced being the SCRUM Master and Backend Developer of a CRM Software.",
+    tags: ["T3", "SCRUM", "Agile", "Typescript", "tRPC", "Prisma", "MySQL", "Jira", "Confluence"],
+    imageUrl: crmImg,
   },
   {
-    title: "Word Analytics",
+    title: "Personal Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Created a personal website and hosted it on Azure for the Cloud Resume Challenge.",
+    tags: ["Next.js", "Typescript", "Tailwind CSS", "Azure"],
+    imageUrl: portfolioImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "Java",
+  "C",
+  "Haskell",
+  "Matlab",
+  "MySQL",
+  "Typescript",
+  "Next.js",
+  "Prisma",
+  "SCRUM",
+  "Agile",
+  "Machine Learning",
+  "Large Language Models",
+  "Deep Learning",
+  "Artificial Intelligence",
+  "Finance",
+  "Psychology",
+  "Quantum Computing",
+  "Cloud Computing"
 ] as const;
